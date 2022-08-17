@@ -20,7 +20,7 @@ public class TestLogin {
 	public void we_have_access_to_TA() {
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("Project path is : "+projectPath);			
-	    System.setProperty("webdriver.Edge.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
+	    System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 
 		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2)); 
