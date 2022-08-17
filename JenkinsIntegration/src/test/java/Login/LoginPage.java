@@ -10,7 +10,7 @@ public class LoginPage {
 	private By txt_mail =By.id("inputEmail");
 	private By txt_password= By.id("inputPassword");
 	private By btn_connect= By.cssSelector("button[type*='submit']");
-	private By Dashboard_display= By.className("container-fluid  p-4 statsBg");
+	private By Dashboard_display= By.className("container-fluid");
 	private By Dashboard_no_displayed= By.id("ResetPassword");
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
@@ -33,4 +33,3 @@ public class LoginPage {
 		driver.findElement(Dashboard_no_displayed).isDisplayed();
 		}
 	}
-
